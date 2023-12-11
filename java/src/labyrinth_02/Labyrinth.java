@@ -71,6 +71,9 @@ public class Labyrinth {
 	 * @return char[][] des Plans
 	 */
 	public static char[][] fromStrings(String[] map) {
+		/**
+		 * String to char[][]
+		 */
 		char[][] result = new char[map.length][map[0].length()];
 		for (int i = 0; i < map.length; i++) {
 			result[i] = map[i].toCharArray();
@@ -129,6 +132,9 @@ public class Labyrinth {
 	}
 
 	public static int suchenAlle(int column, int row, char[][] labyrinth) {
+		/**
+		 * sucht alle Lösungsmöglichkeiten für ein Labyrinth
+		 */
 		if (labyrinth[column][row] == 'A') {
 			return 1;
 		} else if (labyrinth[column][row] == ' ') {
@@ -144,6 +150,9 @@ public class Labyrinth {
 	}
 
 	public static char[][] copyLabyrinth(char[][] labyrinth) {
+		/**
+		 * deepcopy für labyrinth
+		 */
 		char[][] copy = new char[labyrinth.length][];
 		for (int i = 0; i < labyrinth.length; i++) {
 			copy[i] = Arrays.copyOf(labyrinth[i], labyrinth[i].length);
@@ -152,6 +161,9 @@ public class Labyrinth {
 	}
 
 	public static void main(String[] args) throws InterruptedException {
+		/**
+		 * Main Methode
+		 */
 		char[][] labyrinth = fromStrings(maps[0]);
 		printLabyrinth(labyrinth);
 		System.out.println("Ausgang gefunden: " + (suchen(1, 1, labyrinth) ? "ja" : "nein"));
