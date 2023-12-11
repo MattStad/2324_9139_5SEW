@@ -62,6 +62,7 @@ args = parser.parse_args()
 with cProfile.Profile() as profile:
     try:
         labyrinth=read_labyrinth(args.filename)
+
         start_time = time.time()
         total_paths = count_paths(args.xstart, args.ystart, labyrinth,args.print,args.delay)
         end_time = time.time()

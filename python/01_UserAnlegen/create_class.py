@@ -22,6 +22,9 @@ logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
 def getClasses(file):
+    """
+    Liest datei aus
+    """
     infos=list()
     try:
         wb = load_workbook(file, read_only=True)
@@ -38,14 +41,20 @@ def getClasses(file):
                 infos.append([y,y1,y2])
         return infos
     except Exception as e:
-        logger.error("Fehler beim Lesen des EXELS")
+        logger.error("Fehler beim Lesen des EXCELS")
         exit(1)
 
 def createpasswd(klasse,room,teacher):
+    """
+    erstellt passwort
+    """
     zeichenkette = "!%&(),._-=^#"
     return klasse + "" + random.choice(zeichenkette) + "" + str(room) + "" + random.choice(zeichenkette) + "" + teacher + "" + random.choice(zeichenkette)
 
 def createClasses(infos,verbose=False):
+    """
+    main methode
+    """
     try:
         with open('createClasses', 'w') as f1:
             with open('deleteClasses', 'w') as f2:
@@ -70,10 +79,16 @@ def createClasses(infos,verbose=False):
         exit(1)
 
 def createDelSkript(file,kusername):
+    """
+    erstellt Delete Skript
+    """
     file.write("ueserdel -r "+kusername+"\n")
 
 
 def createClassesGrundconfig(f):
+    """
+    gibt Grundkonfig zu Skript hinzu
+    """
     f.write("#! /bin/sh\n")
     f.write("groupadd Lehrer\n")
     f.write("groupadd Seminar\n")
@@ -82,6 +97,9 @@ def createClassesGrundconfig(f):
     f.write("useradd -d \"/home/seminar\" -c \"seminar\" -m -g Seminar -G cdrom,plugdev,sambashare -s /bin/bash seminar\n")
 
 def deleteClassesGrundconfig(f):
+    """
+    löscht Skripte
+    """
     f.write("#! /bin/sh\n")
     f.write("groupdel Lehrer\n")
     f.write("groupdel Seminar\n")
@@ -90,9 +108,13 @@ def deleteClassesGrundconfig(f):
     f.write("userdel -r seminar\n")
 
 def createList(file,username,password):
-        file.write(username+"      "+password+"\n")
+    """
+    erstellt list
+    """
+    file.write(username+"      "+password+"\n")
 
 def createAddSkript(file,username,kusername,password):
+    """Fügt User zum Skript"""
     file.write("useradd -d \"/home/klassen/" + kusername + "\" -c \"" + username + "\" -m -g Klasse -G cdrom,plugdev,sambashare -s /bin/bash " + kusername + "\n")
     file.write("echo \"" + str(password) + ":" + kusername + "\" | chpasswd\n")
 
@@ -102,7 +124,8 @@ parser.add_argument('filename', help='File the classes')
 parser.add_argument('-q', '--quite', type=str, help='Print output of every solution')
 parser.add_argument('-v', '--verbose', action='store_true',default=False, help='Delay after printing a solution (in milliseconds)')
 args = parser.parse_args()
-
+#TODO
+#
 try:
     classes=getClasses(args.filename)
     if(args.quite!=None):

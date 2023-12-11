@@ -1,0 +1,64 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class Gate {
+nInputs
+nOutputs
+Input[] inputs
+Output[] outputs
+String name
+setState(pin,state)
+toString()
+connect(outPort,receiverGate,receiverPort)
+abstract dispatch()
+abstract calcState()
+}
+
+class Taster{
+boolean state
+press()
+dispatch()
+}
+
+class Output{
+List input
+addInput(input)
+getState()
+setState(state)
+}
+
+
+class Input{
+boolean state
+Gate Gate
+getState()
+setState(state)
+}
+
+class FlipFlop{
+boolean state
+calcState()
+dispatch()
+}
+
+class Not{
+boolean state
+calcState()
+}
+
+class And{
+boolean state
+calcState()
+}
+
+class LED{
+calcState()
+isOn()
+}
+
+Gate <-- Taster
+Gate <-- FlipFlop
+Gate <-- LED
+Gate <-- Not
+Gate <-- And
+@enduml

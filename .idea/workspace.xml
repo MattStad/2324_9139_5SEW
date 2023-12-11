@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="43536830-d4c8-444c-ba4e-19dbfccec21a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SEW_Jahr5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SEW_Jahr5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_UserAnlegen/Klassenraeume_2023.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_UserAnlegen/Namen.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_UserAnlegen/UserList" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_UserAnlegen/Userlist_createuser.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_UserAnlegen/createClasses" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_UserAnlegen/createUsers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_UserAnlegen/create_class.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_UserAnlegen/create_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_UserAnlegen/deleteClasses" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_UserAnlegen/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_labyrinth/02_Suche.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_labyrinth/02_labyrinth.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_labyrinth/Labyrinth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_labyrinth/l1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_labyrinth/l2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_labyrinth/l3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_labyrinth/labyrinth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_labyrinth/results.prof" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC/Level_1/level1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC/Level_1/level_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC/Level_2/level_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC/Level_2/level_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC/Level_3/level_3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC/Level_3/level_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC/Level_3/level_3_test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level1/level1_1.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level1/level1_1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level1/level1_2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level1/level1_2.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level1/level1_3.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level1/level1_3.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level1/level1_4.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level1/level1_4.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level1/level1_5.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level1/level1_5.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level1/level1_example.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level1/level1_example.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level1/level1_example_my.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level2/level2_1.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level2/level2_1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level2/level2_2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level2/level2_2.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level2/level2_3.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level2/level2_3.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level2/level2_4.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level2/level2_4.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level2/level2_5.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level2/level2_5.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level2/level2_example.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level2/level2_example.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/classic/level2/level2_example_my.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level1/level1_1.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level1/level1_1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level1/level1_2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level1/level1_2.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level1/level1_3.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level1/level1_3.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level1/level1_4.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level1/level1_4.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level1/level1_5.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level1/level1_5.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level1/level1_example.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level1/level1_example.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level2/level2_1.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level2/level2_1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level2/level2_2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level2/level2_2.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level2/level2_3.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level2/level2_3.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level2/level2_4.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level2/level2_4.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level2/level2_5.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level2/level2_5.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level2/level2_example.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level2/level2_example.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level2/level2_example_my.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3/level2_example_my.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3/level3_1.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3/level3_1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3/level3_2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3/level3_2.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3/level3_3.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3/level3_3.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3/level3_4.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3/level3_4.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3/level3_5.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3/level3_5.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3/level3_example.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3/level3_example.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level3/visualizer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level4/level4_1.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level4/level4_2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level4/level4_3.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level4/level4_4.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level4/level4_5.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level4/level4_example.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level4/level4_example.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloudflight/school/level4/visualizer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InformatikOlympiade/BinarySearch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InformatikOlympiade/findbadword.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WH_Test/BritishWeight.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ZOVdsTpZ0jZJlrZFucCs4TM99K" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/python" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.labyrinth">
+    <configuration name="create_class" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SEW_Jahr5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/01_UserAnlegen" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/01_UserAnlegen/create_class.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="labyrinth" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SEW_Jahr5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/02_labyrinth" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/02_labyrinth/labyrinth.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.labyrinth" />
+        <item itemvalue="Python.create_class" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43536830-d4c8-444c-ba4e-19dbfccec21a" name="Changes" comment="" />
+      <created>1702293213778</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702293213778</updated>
+      <workItem from="1702293217641" duration="3980000" />
+      <workItem from="1702308322847" duration="49000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SEW_Jahr5$labyrinth.coverage" NAME="labyrinth Coverage Results" MODIFIED="1702305703672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/02_labyrinth" />
+    <SUITE FILE_PATH="coverage/SEW_Jahr5$create_class.coverage" NAME="create_class Coverage Results" MODIFIED="1702305333607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/01_UserAnlegen" />
+  </component>
+</project>
