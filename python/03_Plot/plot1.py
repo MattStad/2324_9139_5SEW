@@ -81,8 +81,14 @@ plt.scatter([t,],[math.sin(t),], 100, color ='red')
 #Eine Titelzeile fehlt auch noch.
 ax.set_title("Plot von Matthias Stadlinger, HTL3R")
 #Bonus: Pfeile bei den Achsen (geht nur mit Tricks – siehe plt.annotate).
+plt.annotate(r'$\cos(\frac{-pi}{2})$',
+xy=(t, math.cos(t)), xycoords='data',
+xytext=(-90, -50), textcoords='offset points', fontsize=16,
+arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.2"))
+plt.annotate(r'$\sin(\frac{-pi}{2})$',
+xy=(t, math.sin(t)), xycoords='data',
+xytext=(-90, -50), textcoords='offset points', fontsize=16,
+arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.2"))
 #speichere die fertige Grafik als plot1_familienname.png (kommt in git).
-
-
-plt.savefig("plot1.12_Stadlinger.png")
+plt.savefig("plot1.Final_Stadlinger.png")
 plt.show()
