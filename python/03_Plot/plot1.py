@@ -1,14 +1,68 @@
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import numpy
 import math
 
-PI = math.pi # für besonders Tippfaule ;-)
+PI = math.pi
 CNT = 1024
-X = [ ... for i in range(int(PI*-1),int(PI)) ] # CNT Werte von -pi ... +pi
-C = [ math.cos(x) for x in X ] # CNT cosinuswerte für x von -pi ... +pi
-S = [ ... ]
-#In X, C und S sollten jetzt je 1024 Werte stehen. Daraus machen wir jetzt eine Grafik.
-plt.plot(X, C)
-plt.plot(X, S)
-plt.savefig("plot1_familienname.png",dpi=72)
-plt.show() # Anzeigen: Danach kann man die Grafik nicht mehr ändern!
+X = numpy.linspace(-PI, PI, CNT)
+C = [math.cos(x) for x in X]
+S = [math.sin(x) for x in X]
+
+#Version 1
+#plt.plot(X, C)
+#plt.plot(X, S)
+#plt.savefig("plot1.1_Stadlinger.png",dpi=72)
+#plt.show()
+
+#Version 2
+plt.figure(figsize=(10,6), dpi=80)
+plt.plot(X, C, color="blue", linewidth=2.5, linestyle="-")
+plt.plot(X, S, color="red", linewidth=2.5, linestyle="-")
+
+#Version 3
+plt.xlim(min(X)*1.1, max(X)*1.1)
+plt.ylim(min(C)*1.1, max(C)*1.1)
+
+#Version 4
+#plt.xticks( [-PI, -PI/2, 0, PI/2, PI])
+#plt.yticks([-1, 0, +1])
+
+#Version 5
+plt.xticks([-PI, -PI/2, 0, PI/2, PI],
+[r'$-\pi$', r'$-\pi/2$', r'$0$', r'$+\pi/2$', r'$+\pi$'])
+plt.yticks([-1, 0, +1],
+[r'$-1$', r'$0$', r'$+1$'])
+
+#Version 6
+plt.plot(X, C, color="blue", linewidth=2.5, linestyle="-", label="cosine")
+plt.plot(X, S, color="red", linewidth=2.5, linestyle="-", label="sine")
+plt.legend(loc='upper left', frameon=False)
+
+#Version 7
+ax = plt.gca()
+ax.spines['right'].set_color('none')
+ax.spines['top'].set_color('none')
+ax.xaxis.set_ticks_position('bottom')
+ax.spines['bottom'].set_position(('data',0))
+ax.yaxis.set_ticks_position('left')
+ax.spines['left'].set_position(('data',0))
+
+#Version 8
+t = 2*PI/3
+plt.plot([t,t],[0,math.cos(t)], color ='blue', linewidth=2.5, linestyle="--")
+plt.scatter([t,],[math.cos(t),], 50, color ='blue')
+plt.annotate(r'$\sin(\frac{2\pi}{3})=\frac{\sqrt{3}}{2}$',
+xy=(t, math.sin(t)), xycoords='data',
+xytext=(+10, +30), textcoords='offset points', fontsize=16,
+arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.2"))
+plt.plot([t,t],[0,math.sin(t)], color ='red', linewidth=2.5, linestyle="--")
+plt.scatter([t,],[math.sin(t),], 50, color ='red')
+plt.annotate(r'$\cos(\frac{2\pi}{3})=-\frac{1}{2}$',
+xy=(t, math.cos(t)), xycoords='data',
+xytext=(-90, -50), textcoords='offset points', fontsize=16,
+arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.2"))
+
+plt.savefig("plot1.8_Stadlinger.png")
+plt.show()
