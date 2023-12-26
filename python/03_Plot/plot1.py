@@ -51,18 +51,38 @@ ax.spines['left'].set_position(('data',0))
 
 #Version 8
 t = 2*PI/3
-plt.plot([t,t],[0,math.cos(t)], color ='blue', linewidth=2.5, linestyle="--")
-plt.scatter([t,],[math.cos(t),], 50, color ='blue')
+plt.plot([t,t],[0,math.cos(t)], color ='green', linewidth=2.5, linestyle="--")
+plt.scatter([t,],[math.cos(t),], 50, color ='green')
 plt.annotate(r'$\sin(\frac{2\pi}{3})=\frac{\sqrt{3}}{2}$',
 xy=(t, math.sin(t)), xycoords='data',
 xytext=(+10, +30), textcoords='offset points', fontsize=16,
 arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.2"))
-plt.plot([t,t],[0,math.sin(t)], color ='red', linewidth=2.5, linestyle="--")
-plt.scatter([t,],[math.sin(t),], 50, color ='red')
+plt.plot([t,t],[0,math.sin(t)], color ='yellow', linewidth=2.5, linestyle="--")
+plt.scatter([t,],[math.sin(t),], 50, color ='yellow')
 plt.annotate(r'$\cos(\frac{2\pi}{3})=-\frac{1}{2}$',
 xy=(t, math.cos(t)), xycoords='data',
 xytext=(-90, -50), textcoords='offset points', fontsize=16,
 arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.2"))
 
-plt.savefig("plot1.8_Stadlinger.png")
+#Version 9
+for label in ax.get_xticklabels() + ax.get_yticklabels():
+    label.set_fontsize(16)
+    label.set_bbox(dict(facecolor='white', edgecolor='None', alpha=0.65 ))
+ax.set_axisbelow(True)
+
+#Aufgaben
+#Wähle eine anderen Linienstil bzw. eine andere Linienfarbe für deine Grafik.
+plt.plot(X, C, color="green", linewidth=3, linestyle="--", label="cosine")
+plt.plot(X, S, color="yellow", linewidth=1, linestyle=":", label="sine")
+#Markiere (zusätzlich) die Werte bei -45°.
+t=PI/-2
+plt.scatter([t,],[math.cos(t),], 100, color ='blue')
+plt.scatter([t,],[math.sin(t),], 100, color ='red')
+#Eine Titelzeile fehlt auch noch.
+ax.set_title("Plot von Matthias Stadlinger, HTL3R")
+#Bonus: Pfeile bei den Achsen (geht nur mit Tricks – siehe plt.annotate).
+#speichere die fertige Grafik als plot1_familienname.png (kommt in git).
+
+
+plt.savefig("plot1.12_Stadlinger.png")
 plt.show()
