@@ -153,4 +153,4 @@ def create_excel(users):
     df.to_excel('Userlist_createuser.xlsx', index=False)
 
 
-create_users(getUsers("Namen.xlsx"),"text")
+create_users(getUsers("Namen.xlsx"),"excel")

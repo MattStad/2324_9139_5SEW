@@ -23,7 +23,9 @@ logger.addHandler(console_handler)
 
 def getClasses(file):
     """
-    Liest datei aus
+    liest datei aus
+    :param file:
+    :return: infos
     """
     infos=list()
     try:
@@ -47,23 +49,35 @@ def getClasses(file):
 def createpasswd(klasse,room,teacher):
     """
     erstellt passwort
+    :param klasse:
+    :param room:
+    :param teacher:
+    :return: passwort
     """
     zeichenkette = "!%&(),._-=^#"
     return klasse + "" + random.choice(zeichenkette) + "" + str(room) + "" + random.choice(zeichenkette) + "" + teacher + "" + random.choice(zeichenkette)
 
-def createClasses(infos,verbose=False):
+def createClasses(infos):
     """
     main methode
+    :param infos:
+    :param verbose:
+    :return: skripte
     """
     try:
+        existing_user=list()
         with open('createClasses', 'w') as f1:
             with open('deleteClasses', 'w') as f2:
                 with open('UserList', 'w') as f3:
                     createClassesGrundconfig(f1)
                     deleteClassesGrundconfig(f2)
-                    logger.info("Grundconfig erstellt")
+                    if not quiet:
+                        logger.info("Grundconfig erstellt")
                     for i in infos:
                         username=i[0]
+                        if username in existing_user:
+                            raise Exception("User exists already!")
+                        existing_user.append(username)
                         kusername="k"+username.lower()
                         password=createpasswd(i[0],i[1],i[2])
                         createAddSkript(f1,username,kusername,password)
@@ -71,23 +85,29 @@ def createClasses(infos,verbose=False):
                         createList(f3,kusername, password)
                         if verbose:
                             logger.info("User added to Skripts:"+username)
-                    logger.info("UserList erstellt")
-                    logger.info("deleteClasses Skript erstellt")
-                    logger.info("createClasses Skript erstellt")
+                    if not quiet:
+                        logger.info("UserList erstellt")
+                        logger.info("deleteClasses Skript erstellt")
+                        logger.info("createClasses Skript erstellt")
     except Exception as e:
         logger.error("Fehler beim erstellen der Klassen")
         exit(1)
 
 def createDelSkript(file,kusername):
     """
-    erstellt Delete Skript
+    erstellt delete skript
+    :param file:
+    :param kusername:
+    :return:
     """
     file.write("ueserdel -r "+kusername+"\n")
 
 
 def createClassesGrundconfig(f):
     """
-    gibt Grundkonfig zu Skript hinzu
+    create Grundconfig
+    :param f:
+    :return:
     """
     f.write("#! /bin/sh\n")
     f.write("groupadd Lehrer\n")
@@ -98,7 +118,9 @@ def createClassesGrundconfig(f):
 
 def deleteClassesGrundconfig(f):
     """
-    löscht Skripte
+    lösch skript
+    :param f:
+    :return:
     """
     f.write("#! /bin/sh\n")
     f.write("groupdel Lehrer\n")
@@ -109,32 +131,39 @@ def deleteClassesGrundconfig(f):
 
 def createList(file,username,password):
     """
-    erstellt list
+    erstellt Liste
+    :param file:
+    :param username:
+    :param password:
+    :return:
     """
     file.write(username+"      "+password+"\n")
 
 def createAddSkript(file,username,kusername,password):
-    """Fügt User zum Skript"""
+    """
+    Fügt User zum Skript
+    :param file:
+    :param username:
+    :param kusername:
+    :param password:
+    :return:
+    """
     file.write("useradd -d \"/home/klassen/" + kusername + "\" -c \"" + username + "\" -m -g Klasse -G cdrom,plugdev,sambashare -s /bin/bash " + kusername + "\n")
     file.write("echo \"" + str(password) + ":" + kusername + "\" | chpasswd\n")
 
-
+global verbose,quiet
 parser = argparse.ArgumentParser(description='Make Classscripts')
 parser.add_argument('filename', help='File the classes')
-parser.add_argument('-q', '--quite', type=str, help='Print output of every solution')
-parser.add_argument('-v', '--verbose', action='store_true',default=False, help='Delay after printing a solution (in milliseconds)')
+group = parser.add_mutually_exclusive_group()
+group.add_argument('-q', '--quiet', action='store_true', help='Print output of every solution')
+group.add_argument('-v', '--verbose', action='store_true', help='Delay after printing a solution (in milliseconds)')
 args = parser.parse_args()
-#TODO
-#
+
 try:
     classes=getClasses(args.filename)
-    if(args.quite!=None):
-        if(args.quite.upper()=="DEBUG"):
-            logger.setLevel(logging.DEBUG)
-        elif (args.quite.upper()=="WARNING"):
-            logger.setLevel(logging.DEBUG)
-        if (args.verbose):
-            logger.info("Logging Level set to:"+args.quite)
-    createClasses(classes,args.verbose)
+    verbose=args.verbose
+    print(verbose)
+    quiet=args.quiet
+    createClasses(classes)
 except Exception as e:
     print(f"An error occurred: {e}")
